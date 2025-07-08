@@ -1,0 +1,26 @@
+#program
+def bubble_sort(arr):
+    n=len(arr)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+size=int(input("enter the number of elements:"))
+print("Enter ",n,"elemets....")
+arr=[]
+for _ in range(size):
+    a=arr.append(int(input("enter element:")))
+print("original array:",arr)
+bubble_sort(arr)
+print("sorted array:",arr)
+
+output:
+enter the number of elements: 5
+Enter  5 elemets....
+enter element: 5
+enter element: 8
+enter element: 4
+enter element: 6
+enter element: 2
+original array: [5, 8, 4, 6, 2]
+sorted array: [2, 4, 5, 6, 8]
